@@ -5,7 +5,7 @@ Version:	1.8.1
 Release:	3
 License:	GPL
 Group:		Applications/Editors
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net/
 BuildRequires:	autoconf
