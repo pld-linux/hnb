@@ -8,10 +8,10 @@ Group:		Applications/Editors
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libxml2-devel
 BuildRequires:	ncurses-devel
-BuildRequires:	automake
-BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,8 +43,6 @@ aclocal
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-gzip -9nf README ChangeLog AUTHORS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
