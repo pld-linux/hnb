@@ -33,7 +33,7 @@ wielu wiêcej rzeczy, o których autor jeszcze nie pomy¶la³...
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
