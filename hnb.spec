@@ -2,7 +2,7 @@ Summary:	Hierarchical ncurses/batch data organizer and XML editor
 Summary(pl):	Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML
 Name:		hnb
 Version:	1.8.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
@@ -54,4 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
+%doc contrib
 %attr(0755,root,root) %{_bindir}/hnb
+%{_mandir}/man1/*
