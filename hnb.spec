@@ -5,9 +5,6 @@ Version:	1.8.1
 Release:	2
 License:	GPL
 Group:		Applications/Editors
-Group(de):	Applikationen/Editors
-Group(pl):	Aplikacje/Edytory
-Group(pt):	Aplicações/Editores
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net
