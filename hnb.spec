@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	bcbf069d7cb3d3f80d7ee39bc6f5f669
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net/
 BuildRequires:	autoconf
