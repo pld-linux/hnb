@@ -2,10 +2,10 @@ Summary:	Hierarchical ncurses/batch data organizer and XML editor
 Summary(pl):	Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML
 Name:		hnb
 Version:	1.9.18pre6
-Release:	3
+Release:	1
 License:	GPL
 Group:		Applications/Editors
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://hnb.sourceforge.net/.files/%{name}-%{version}.tar.gz
 # Source0-md5:	0cd741f09b1968719c03da562047eff5
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net/
