@@ -8,7 +8,7 @@ Group:		Applications/Editors
 Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
 Group(pt):	Aplicações/Editores
-Source0:	http://hnb.sourceforge.net/%{name}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libs.patch
 URL:		http://hnb.sourceforge.net
 BuildRequires:	libxml2-devel
