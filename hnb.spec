@@ -32,9 +32,10 @@ wielu wiêcej rzeczy, o których autor jeszcze nie pomy¶la³...
 %patch0 -p1
 
 %build
+rm -f missing
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
