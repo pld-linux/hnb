@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Editors
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-libs.patch
-URL:		http://hnb.sourceforge.net
+URL:		http://hnb.sourceforge.net/
 BuildRequires:	libxml2-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	automake
