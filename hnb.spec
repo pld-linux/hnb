@@ -1,13 +1,12 @@
 Summary:	Hierarchical ncurses/batch data organizer and XML editor
 Summary(pl):	Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML-a
 Name:		hnb
-Version:	1.8.1
-Release:	3
+Version:	1.9.17
+Release:	1
 License:	GPL
 Group:		Applications/Editors
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	bcbf069d7cb3d3f80d7ee39bc6f5f669
-Patch0:		%{name}-libs.patch
+Source0:	http://dl.sourceforge.net/hnb/%{name}-%{version}.tar.gz
+# Source0-md5:	c73b5f63d8ffe1976c915c1f8265951d
 URL:		http://hnb.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -30,26 +29,24 @@ wielu wiêcej rzeczy, o których autor jeszcze nie pomy¶la³...
 
 %prep
 %setup  -q
-%patch0 -p1
 
 %build
-rm -f missing
-%{__aclocal}
-%{__autoconf}
-%{__automake}
-%configure
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -I/usr/include/ncurses -Ilibcli -I.. -DHAVE_CONFIG_H"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+install src/hnb	$RPM_BUILD_ROOT%{_bindir}/hnb
+install doc/hnb.1 $RPM_BUILD_ROOT%{_mandir}/man1/hnb.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog AUTHORS contrib
-%attr(0755,root,root) %{_bindir}/hnb
+%doc README
+%attr(755,root,root) %{_bindir}/hnb
 %{_mandir}/man1/*
