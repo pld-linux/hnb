@@ -1,5 +1,5 @@
 Summary:	Hierarchical ncurses/batch data organizer and XML editor
-Summary(pl):	Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML-a
+Summary(pl.UTF-8):   Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML-a
 Name:		hnb
 Version:	1.9.17
 Release:	1
@@ -20,12 +20,12 @@ in one place, for example adresses, todo lists, ideas, book "reviews",
 brainstorming, organizing a speech, making a structured packing list
 random notes, and probably many more I haven't thought of yet..
 
-%description -l pl
+%description -l pl.UTF-8
 Hierarchiczny notes (hnb - hierarchical notebook) to program do
-zbierania wielu rodzajÛw danych w jednym miejscu, np. adresÛw, list
-rzeczy do zrobienia, pomys≥Ûw, recenzji, efektÛw "burzy mÛzgÛw",
-przygotowywania przemÛwieÒ, prowadzenia notatek, oraz prawdopodobnie
-wielu wiÍcej rzeczy, o ktÛrych autor jeszcze nie pomy∂la≥...
+zbierania wielu rodzaj√≥w danych w jednym miejscu, np. adres√≥w, list
+rzeczy do zrobienia, pomys≈Ç√≥w, recenzji, efekt√≥w "burzy m√≥zg√≥w",
+przygotowywania przem√≥wie≈Ñ, prowadzenia notatek, oraz prawdopodobnie
+wielu wiƒôcej rzeczy, o kt√≥rych autor jeszcze nie pomy≈õla≈Ç...
 
 %prep
 %setup  -q
