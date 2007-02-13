@@ -1,5 +1,5 @@
 Summary:	Hierarchical ncurses/batch data organizer and XML editor
-Summary(pl.UTF-8):   Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML-a
+Summary(pl.UTF-8):	Hierarchiczny organizer na ncurses lub wsadowy oraz edytor XML-a
 Name:		hnb
 Version:	1.9.17
 Release:	1
